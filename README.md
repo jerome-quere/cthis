@@ -10,20 +10,19 @@ Well known in object oriented-languages this lib bring it to the C languages.
 Exemple
 -------
 
-  struct Foo
-  {
-    void (*bar)();
-  }
+    struct Foo
+    {
+      void (*bar)();
+    }
 
-  static void foo_bar(Foo* this)
-  {
-    //Have fun with `this`
-  }
+    static void foo_bar(Foo* this)
+    {
+      //Have fun with `this`
+    }
 
-  int main()
-  {
-    Foo foo;
-    foo.bar = cthis_bind0p(&foo, &Foo_bar);
-    foo.bar();
-  }
-
+    int main()
+    {
+      Foo foo;
+      foo.bar = cthis_bind0p(&foo, &Foo_bar);
+      foo.bar();
+    }
