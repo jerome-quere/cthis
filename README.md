@@ -26,3 +26,8 @@ Exemple
       foo.bar = cthis_bind0p(&foo, &Foo_bar);
       foo.bar();
     }
+    
+About
+-----
+
+This code is based on a Jules Baratoux [jules@baratoux.fr](mailto:jules@baratoux.fr) original idea.
