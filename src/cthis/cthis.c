@@ -63,6 +63,7 @@ static void* cthis_bind__(void* this, void* method, void* tpl1, void* tpl2)
   mprotect(text, size, PROT_READ | PROT_EXEC | PROT_WRITE);
   cthis_replaceFlags(text, size, CTHIS_THIS_FLAG, this);
   cthis_replaceFlags(text, size, CTHIS_METHOD_FLAG, method);
+  mprotect(text, size, PROT_READ | PROT_EXEC);
   return (text);
 }
 
